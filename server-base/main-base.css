@@ -1,82 +1,82 @@
 @import url(https://8xs4qxklp8.execute-api.us-east-2.amazonaws.com/release/gorawgit?giturl=/puckzxz/NotAnotherAnimeTheme/master/css/scsl.css);
-:root {
-
-	/* if u want to change the full colour scope of the theme
+:root { 
+    
+	/* if u want to change the full colour scope of the theme 
 	    the best colours to look at first
-
-	        --title-color
+	        
+	        --title-color 
 	        --accent-colour
             --on-hover-transparency
             --dark-menu-colour
-            --light-menu-colour
-
+            --light-menu-colour 
+            
             set these variables like this if u just want menus organized
-            --context-menu-colour: var(--dark-menu-colour);
+            --context-menu-colour: var(--dark-menu-colour); 
             --user-body: var(--dark-menu-colour);
             `--user-header` will still need its own colour
         discords element inspector `CTRL + SHIFT + i`
     */
+	
 
 
 
-
-	/*
+	/* 
 		Quick Important Variables
 	*/
-
+	
     /* Edit this to change your background */
     --background-image: url(https://i.imgur.com/hLulxgq.png);
-
+	
     /* home button pic - a square is better*/
     --friends-icon: url(https://i.imgur.com/ky3iygN.png);
-
+    
 	/* Change global transparency */
     --main-transparency: rgba(0, 0, 0, .5);		/* default: rgba(0, 0, 0, 0.8); */
-
+	
 	/* Change chat messages font size, you can use any unit: px, em, rem, %, etc. */
     --font-size: 14px; 							/*default: 16px */
-
-	/* colour for member/server  "Categories"
+	
+	/* colour for member/server  "Categories" 
 	    my Home Button (messages/friend icon) is set to a similar colour as the title colour
 	    if u change the title colour, i would follow the "--friends-icon" link, change the colour of it
 	    to ur title colour, upload it to imgur and add it here for continuity */
     --title-color: rgba(132, 96, 75, 1);  /* 255,190,152, .4 - 200,152,103, .45 - rgba(193,145,96, .6)*
-
+    
         note: alot of colour variables are tied to "--accent-colour" but u may uncouple them */
     --accent-colour: rgba(236, 212, 225, 1); 		/* mostly used on text (i.e all the smol white icons and text turn a light pink)*/
-
+	
 	/* the rainbow notification bar requires a color start point */
 	/* this is a dim purple one but u can make it brighter and more colourful */
 	--rainbow-seed: rgba(255,120,255, .4);/* default: --main-color or --title-color; */
-
-
-
-
-
+	
+	
+    
+	
+	
 	/*
 		Those Little things that make u feel warm inside
 	*/
-
+	
     /* scroll bar - control colour*/
     --scrollbar-size: 10px;
     --chat-scroll-size: calc(var(--scrollbar-size) + (var(--scrollbar-size) / 1.8));
     --scroll-bar-color: rgba(200,150,200, .35); 		/* default: rgba(255,255,255, .15);*/
     --chat-scroll-bar-color: rgba(200,150,200, .2); 	/* chat scroll bar is a bit brighter cause CSS layers dumb, so it's a darker shade to match*/
-
-
+	
+	
 	/* ping colors*/
 	/* each ping visible on the screen has a coloured line*/
-    --ping-inline-colour: rgba(255,170,212, .2);
+    --ping-inline-colour: rgba(255,170,212, .2); 
 
     /* each ping creates an embed (that thicc coloured line to the left when u do bot commands) */
-    --ping-embed-colour: 1px solid #FFAAD4;
-
-
+    --ping-embed-colour: 1px solid #FFAAD4; 
+	
+	
     /* code block stuff - markup is part of a code block */
     --markup-background: var(--on-hover-transparency);
     --code-block-colour: rgba(255,200,150, .45); 	/* default: rgb(67, 181, 129); */
     --code-block-width: 1px;
-
+    
 
 
     /* sets the time visual thang - if set to `none` it will display the time when u hover on usernames
@@ -98,10 +98,10 @@
     --to-present-bar: var(--new-messages-bar);
     --to-present-bar-hover: var(--new-messages-hover);
 	--notification-bar: var(--new-messages-bar);
-
+	
 	/* DM and friend variables - default: 42px */
     --dm-height: 38px;
-
+	
 	/* typing indicator colour */
 	--type-indicator: var(--accent-colour);
 
@@ -109,35 +109,35 @@
     /* --side-bar-width: 240px; */
 
 	/* 	Audio Colour
-		when in VC the server ur in will have a audio symbol and animation
+		when in VC the server ur in will have a audio symbol and animation 
 		this and the animation can be changed, by modifying the animation colour values, theres only 3 u need to change
 		all of them are different shades of this default colour
 	*/
 	--audio-colour: var(--new-messages-bar);
-
+	
 	/* Icon colour */
 	--icon-colour: var(--accent-colour);
-
+	
 	/* voice chat member colours  */
 	--VC-count-colour: var(--on-hover-transparency);
 	--max-count-colour: rgba(132, 96, 75, .4);
 	--VC-text-colour: var(--icon-colour);
-
+	
 	/* ping, bell, people & pin icon colours */
 	--title-icon-colour: var(--icon-colour);
-
+	
 	/* new server and server search icon colour */
     --server-icon-colour: var(--icon-colour);
 
     /* use this to change the colour of the friends/home icon */
     --friends-icon-hue-rotation: 300deg;
     --friends-icon-brightness: 30%;
-
+    
     /* colour of bot embeds, will add 40% opacity to background and 60% to border thoe */
     --embed-colour: 7, 0, 7;  /* Discord Default: 46,48,54 */
     --embed-transparency: .4;
     --embed-border-colour: 20, 0, 5;
-
+    
     /* This is the general standard used for all the curves in the theme, feel free to bake ur theme block by setting it to 0 */
     --theme-border-radius: 8px;
 	--bar-radius: var(--theme-border-radius); 						/* 12 - 15 my usual (0 for dem right angles) */
@@ -147,23 +147,23 @@
     --username-hover-radius: var(--theme-border-radius);
     --menu-radius: 5px;
 
-
-
-
-
-
+    
+	
+    
+	
+	
 	/*
 		Interesting Specifics
 	*/
-
+    
     /* this is for "specific" category & member colors */
     --category-color: var(--title-color);
-    --member-color: var(--title-color);
-    --settings-title-color: var(--title-color);
-
+    --member-color: var(--title-color); 
+    --settings-title-color: var(--title-color); 
+	
 	/* general hover colours */
     --category-hover-colour: var(--title-color);
-
+    
     /* unread colours*/
     --unread-dot: var(--accent-colour); /* rgba(255,170,212, .8); */
     --unread-text-color: var(--accent-colour); /* default: #dcddde */
@@ -191,7 +191,7 @@
     --side-bar-banner-height: calc(var(--side-bar-width) * .562);
 
     /*  allows the override of banner fade settings */
-    --banner-fade: none;
+    --banner-fade: none; 
 
     /* context menus and user popout design */
 	/* menu colour - menu footers i use var(--dark-grey)*/
@@ -199,24 +199,24 @@
     --dark-menu-colour: rgba(32,22,20, .99);
     --menu-Fweight: 400;                            /* F means font, these are font settings */
     --menu-Fsize: small;
-
+    
     /* pins/uploads/mentions */
 	--upload-colour: var(--dark-menu-colour);
 	--upload-footer-colour: var(--light-menu-colour);  /* default: rgba(0,0,0,.4); */
 	--pins-colour: var(--dark-menu-colour);            /* default: rgba(33,33,33,.6); */
 	--pins-colour: var(--dark-menu-colour);            /* default: rgba(33,33,33,.6); */
-    --pins-header-colour: var(--light-menu-colour);
+    --pins-header-colour: var(--light-menu-colour); 
     --pins-wrapper: rgba(0,0,0,.45);
     --pins-width: 500px;
     --pins-right: -64px;
     --pins-borders: 8px 0 0 0;
-    --pins-max-height: 983px;
+    --pins-max-height: 983px;  
 
     /* autocomplete menu colours */
-    --autocomplete-menu-colour: rgba(10,5,3,.9);
+    --autocomplete-menu-colour: rgba(10,5,3,.9); 
     --autocomplete-pointer-events: none;            /* this makes it so u cant use mouse to click on people ur tying to ping or emotes ur typing
                                                        change `none` to something weird for mouse selection, i use `non` cause #Cabbage */
-
+    
     /* emote menu, includes when emotes are typed +  the emote selector*/
     --emote-auto-colour: rgba(10, 5, 4, .95);
     --emote-menu: var(--dark-menu-colour);
@@ -236,10 +236,10 @@
     --user-popout-left: 30px;					/* to make it seem more spacious  */
     --user-popout-top: -10px;           /*blurd birthday-plugin: -63  default:-10*/
     --user-top-difference: 25px;
-
+	
     /* normal context menus */
-    --context-menu-colour: rgba(35, 29, 23, .99);
-    --menu-item-hover: var(--scroll-bar-color);
+    --context-menu-colour: rgba(35, 29, 23, .99); 
+    --menu-item-hover: var(--scroll-bar-color); 
     --leave-server-text-colour: #fff; 				/* was 99aab5*/
     --slider-bubble-width: 2px; 					/* default for volume slider is a ball, has values    width: 10px;    radius: 50%;    display-left: 20px; */
     --slider-bubble-radius: 3px;                    /* volbal */
@@ -249,7 +249,7 @@
     --audio-animation-scale: 4px; 					/* size of the largest animation the others scale */
     --max-submenu-height: 450px;
 
-
+    
     /* sets picker things */
     /*picker menu background */
     --status-picker-blend-mode: multiply;           /* this is a basic attempt at transparency, but it will fail on complex backgrounds */
@@ -274,23 +274,23 @@
     --selected-foreground: rgba(250,190,140, .8);
     --current-colour: var(--selected-foreground);
     --selected-server: none; /* will use rainbow anim, but changing this would perma set the colour of ur current server */
-
+    
     /* on hover shades */
     --on-hover-transparency: rgba(255, 200, 255, .075); /* rgba(255, 200, 255, 0.02); */
     --on-select-transparency: var(--on-hover-transparency); /*rgba(255, 210, 255, 0.03); */
     --username-on-hover: var(--on-hover-transparency); /* rgba(255, 200, 255, .15);
-
+	
 	/* status-picker variables - feel free to adjust them for a different feel */
 	--picker-width: calc(var(--side-bar-width) - 2px);
 	--option-height: 52px;
 	--margin-bottom: 0px;
 	--option-width: calc(var(--picker-width) / 4); /*cause 4 options + 1px border */
 	--status-anim: bottom-pop-in; 	/* animation options:  expand-in, bottom-pop-in, top-pop-in, left-pop-in, right-pop-in (type "none" to remove animation or feel free to build ur own, examples below) */
-
+	
 	/* admin invite icon, distance from the settings icon */
 	--invite-icon-space: 8px;
-
-    /* horizontal server icons */
+    
+    /* horizontal server icons */ 
     --HSL-roundness: 50%; /* Server non hovered and selected */
     --HSL-roundnessHover: 25%; /* Server hovered */
     --HSL-spacing: 6px; /* Space between servers */
@@ -311,49 +311,49 @@
 
 
 
-
-	/*
-		changing nearly all important colours should be possible above
+    
+	/* 
+		changing nearly all important colours should be possible above 
 		the colours below are less important and mostly little smol details
-
-
+	
+	
 		Minutiae u can mostly leave
 	*/
-
+	
 	/* Change the main color */
 	/* main colour changes the server rainbow colour animation along with a few other details colours listed above will be more obvious */
-    --main-color: rgba(255,120,255, .4);
+    --main-color: rgba(255,120,255, .4); 
 	--secondary-color: rgb(255,183,197); /*solid Secondary Accent of the Theme*/
-
+	
 	/* Friend Icon - is the real name for the Home Button*/
 	/* Edit this to change your friends icon picture, position  */
     --friends-icon-position: center center; 		/* default: center center */
 	--home-button-extra: 2px; 						/* increases the size of home button can also decrease it, manual adjustments needed for different position thoe*/
-
+	
     /* Edit this to change your friends icon picture, zoom  */
     --friends-icon-zoom: 90%; 						/* default: 100% */
 
     /* compact emotes - made smaller so emote use doesn't make shit look dumb */
     --compact-emote-size: 18px;
-
+	
 	/* separator, refers to the line dividing the home button from ur server list */
     --separator-color: var(); /* default: --scroll-bar-color*/
-
+	
 	/* when u toggle a plugin on and off, toasts are the lil message that pops up*/
     --toast-color: var(--scroll-bar-color);
-
+    
     /* dark discord colour */
     --dark-grey: #252325;
-
+	
     /* Change the unread server animation. Replace it with "none" in order to remove any animations */
     --unread-server-animation: rainbow;
-
+	
     /* Change background color when you hover members or friends */
     --hover-list-bg-color: var(--on-hover-transparency); 	/* default: rgba(255,255,255, .15) */
 
 	/* Write "transparent" in order to make the options sections with the same look as the theme  */
-    --options-transparency: transparent; 					/* default: #2f3136 */
-
+    --options-transparency: transparent; 					/* default: #2f3136 */		
+	
     /* Change the tiny border lines color */
     --border-lines-color: hsla(0,0%,100%,.1); 				/* default: hsla(0,0%,100%,.1);*/
     --borders: 1px solid var(--border-lines-color); 		/* OG theme forgot some borders */
@@ -361,21 +361,21 @@
     /* windows buttons margins (both top, and right margins) */
 	/* those being the - O x  buttons for minimizing and closing windows*/
     --space: 2px;
-
+    
 	/* default anim */
 	--default-animation: cubic-bezier(.4, 0, .2, 1);
-
+    
     /* text in the top left can be set, but i have it commented out at the bottom */
     --custom-watermark: "Nailed it";
-
+    
     /* sound colour */
     --speaking-user: rgba(193,145,96, .4); /* code for this is commented out */
-
+    
     /* settings page dimensions */
     --margins: 50px;
     --max-width: 900px;
     --toast-left: calc(var(--max-width) / 2 + var(--margins) + 150px);
-
+	
 	/* in text emote thang*/
 	--emote-animation: cubic-bezier(.4, 0, .2, 1);
 	--emote-anim-speed: 250ms;
@@ -383,10 +383,10 @@
     /* id u want to remove VS icons type "none" */
     --VC-icons: non;
     --VC-icon-colour: var(--accent-colour);
-
+    
     /* Edit this to change the color when you hover over a text channel */
     --text-hover-color: var(--accent-colour); /* default: #b9bbbe */
-
+    
     /* Edit this to change the color when you hover over a voice channel */
     --voice-hover-color: var(--accent-colour) ; /* default: #f6f6f7 */
     --selected-text-voice-color: #f6f6f7; /* default: #f6f6f7 */
@@ -417,17 +417,17 @@
 	/*
 		Currently Supported Plugins
 	*/
-
+	
 	/* deleted message variables -originally #f00  */
     --deleted-text: #ff2b2b;
 
     /* discord badges */
     --badge-height: 15px;
 	--badge-bottom: 2px;
-
+	
 	/* char counter - 	delete all these values for the default look, or feel free to modify its position
 					  	u can choose left or right position by deleting the value for `--counter-left` to make it snap right*/
-	--counter-left: 4px;
+	--counter-left: 4px; 
 	--counter-top: -14px;
 	--counter-font: 9px;
 
@@ -439,8 +439,8 @@
 }
 
 
-/*
-	Main Animations
+/* 
+	Main Animations 
 */
 
 /* Status Picker */
@@ -496,7 +496,7 @@ div.da-base > div.da-content > div.da-sidebar > div { /* borders for side bar */
 
 
 /* title bar (also includes the windows minus, full screen & exit) */
-.typeWindows-1za-n7 {
+.typeWindows-1za-n7 { 
     background: var(--main-transparency);
     /* height: 10px; */
 }
@@ -552,8 +552,8 @@ nav.da-wrapper div.da-scroller { padding-top: 10px; }
 div.da-container div.da-sidebar { width: var(--side-bar-width) !important; }
 div.da-animatedContainer { height: var(--side-bar-banner-height); }
 #channels .da-containerDefault:nth-child(2){ padding-top: calc(var(--side-bar-banner-height) - 115px); }
-div.da-bannerImage {
-    border-radius: var(--theme-border-radius) var(--theme-border-radius) 0 0;
+div.da-bannerImage { 
+    border-radius: var(--theme-border-radius) var(--theme-border-radius) 0 0; 
     width: 100%;
     height: 100%;
 }
@@ -664,7 +664,7 @@ div.da-containerDefault[role="listitem"] > div:hover h2 {
 
 /* hidding track, setting chat scrollbar size */
 .da-scroller::-webkit-scrollbar-track { visibility: hidden; }
-.da-scroller::-webkit-scrollbar,
+.da-scroller::-webkit-scrollbar, 
 .da-scroller::-webkit-scrollbar-thumb {
     width: var(--chat-scroll-size);
 }
@@ -674,7 +674,7 @@ div.da-containerDefault[role="listitem"] > div:hover h2 {
 .da-scroller::-webkit-scrollbar { width: var(--scrollbar-size) !important; }
 
 /* selected channel colours - also changes the event text channels onHover colour for some reason*/
-.nameSelectedText-sp_EUw,
+.nameSelectedText-sp_EUw, 
 .nameSelectedVoice-1qSph5 {
     color: var(--selected-foreground) !important;
 }
@@ -693,7 +693,7 @@ div.da-containerDefault[role="listitem"] > div:hover h2 {
 
 
 /* selected channel colours - also changes the event text channels onHover colour for some reason*/
-.nameSelectedText-sp_EUw,
+.nameSelectedText-sp_EUw, 
 .nameSelectedVoice-1qSph5 {
     color: var(--selected-foreground) !important;
 }
@@ -705,7 +705,7 @@ div.da-containerDefault[role="listitem"] > div:hover h2 {
 /* text channel & vc onHover colours*/
 .nameHoveredText-1uO31y,
 .nameHoveredVoice-YJ1Vfd,
-.colorHoveredText-OZnAgu,
+.colorHoveredText-OZnAgu, 
 .colorHoveredVoice-1kucsK,
 #app-mount .wrapper-1ucjTd:not(.modeSelected-1zApJ_):hover svg,
 #app-mount .wrapper-1ucjTd.modeSelected-1zApJ_ svg {
@@ -715,7 +715,7 @@ div.da-containerDefault[role="listitem"] > div:hover h2 {
 /* changes made to allow colour setting of the friend icon - Horizontal Server Version *
 /* corrected friend icon */
 nav.da-wrapper div.tutorialContainer-1v44GL div.da-pill { display: none; }
-nav.da-wrapper div.tutorialContainer-1v44GL div.da-listItemWrapper > svg > foreignObject > a { border-radius: 0 !important; }
+nav.da-wrapper div.tutorialContainer-1v44GL div.da-listItemWrapper > svg > foreignObject > a { border-radius: 0 !important; } 
 nav.da-wrapper div.tutorialContainer-1v44GL div.da-listItem { left: 0px; }
 nav.da-wrapper div.tutorialContainer-1v44GL div.da-listItemWrapper {
     filter: sepia() saturate(10000%) hue-rotate( var(--friends-icon-hue-rotation)) brightness( var(--friends-icon-brightness));
@@ -786,8 +786,8 @@ h2.da-headerCozyMeta span.da-botTag {
     border-top-color: var(--dark-menu-colour) !important;
     margin-top: -1px;
 }
-
-
+ 
+ 
 /* removes plugin tool tips */
 div.tooltip-2QfLtc.tooltipLeft-3EDOk1.tooltipBlack-PPG47z {
      display: none;
@@ -796,9 +796,9 @@ div.tooltip-2QfLtc.tooltipLeft-3EDOk1.tooltipBlack-PPG47z {
 /* changing time display */
 h2.da-header:hover span.da-timestamp,
 img:hover + h2.da-header span.da-timestamp { display: inline-block; }
-span.da-timestamp {
-    height: 1rem;
-    display: var(--time-display);
+span.da-timestamp { 
+    height: 1rem; 
+    display: var(--time-display); 
 }
 
 /* bot tag dimensions and stuff */
@@ -822,7 +822,7 @@ span.da-botTag {
 	font-size: 1em !important;
 	font-weight: 400 !important;
 	background-color: var(--toast-color) !important;
-
+	
 } .toast { display:none; }
 
 /* making sure open pop-outs dont troll me */
@@ -873,8 +873,8 @@ h2.da-header:hover, img:hover + h2.da-header  {
 
 /* text bar auto-emote animation */
 .autocomplete-1vrmpx {
-	animation: bottom-pop-out var(--emote-anim-speed) var(--emote-animation) !important;
-	background: var(--emote-auto-colour) !important;
+	animation: bottom-pop-out var(--emote-anim-speed) var(--emote-animation) !important; 
+	background: var(--emote-auto-colour) !important; 
 }
 @keyframes bottom-pop-out { from { transform: translate(0, 20px); opacity: 0; } }
 
@@ -945,15 +945,15 @@ nav.da-wrapper div.da-scroller::-webkit-scrollbar-thumb { display: none; }
 
 
 
-/*
+/* 
     in Chat/Mark up edits
 */
 
 /* setting regular code block sections */
 /* div.da-contents > div.da-markup pre, */
 /* div.da-embed div */
-.da-markup pre > code {
-    border-radius: var(--markup-radius);
+.da-markup pre > code { 
+    border-radius: var(--markup-radius); 
     background-color: var(--markup-background) !important;
 } .da-markup pre {
     border: var(--borders) !important;
@@ -966,7 +966,7 @@ nav.da-wrapper div.da-scroller::-webkit-scrollbar-thumb { display: none; }
 
 
 /* editing quote block */
-blockquote {
+blockquote { 
     padding-left: 5px !important;
     padding-bottom: 2px !important;
     margin-left: 1px !important;
@@ -989,9 +989,9 @@ div.da-blockquoteDivider {
 }
 
 /* code for changing ping colour */
-div.da-mentioned:before { border: var(--ping-embed-colour) !important; }
-div.da-mentioned {
-    background: var(--ping-inline-colour) !important;
+div.da-mentioned:before { border: var(--ping-embed-colour) !important; } 
+div.da-mentioned { 
+    background: var(--ping-inline-colour) !important; 
     border-radius: 0 var(--theme-border-radius) var(--theme-border-radius) 0;
 }
 
@@ -1015,7 +1015,7 @@ div.da-mentioned {
 /* weird chat hight error*/
 div.da-messagesWrapper div.da-scroller.da-systemPad {
     height: 99.2% !important;
-}
+} 
 
 /* making the unread lines a bit cleaner */
 div.da-chatContent div.da-isUnread > span.da-unreadPill { display:none; }
@@ -1149,7 +1149,7 @@ div.da-sidebar div.da-voiceUser { margin-top: 1px; }
 svg.da-icon path { color: var(--title-icon-colour); }
 [aria-label="Pinned Messages"] svg.da-icon path{
 	/* d: path('M16,12V4H17V2H7V4H8V12L6,14V16H11.2V22H12.8V16H18V14L16,12M8.8,14L10,12.8V4H14V12.8L15.2,14H8.8Z') !important; */
-	d: path('M16,12V4H17V2H7V4H8V9,M16,12V4H17V2H7V4H8V12L6,14V16H11.2V22H12.8V16H18V14L16,12M8.8,14L10,12.8V4H14V12.8L15.2,14H8.8Z') !important;
+	d: path('M16,12V4H17V2H7V4H8V9,M16,12V4H17V2H7V4H8V12L6,14V16H11.2V22H12.8V16H18V14L16,12M8.8,14L10,12.8V4H14V12.8L15.2,14H8.8Z') !important; 
 }
 
 /* setting svg size and color (new server and search server icons) */
@@ -1215,7 +1215,7 @@ div.da-privateChannels div.da-children div.da-numberBadge { margin-right: 10px; 
 div.da-listItem div.da-circleIconButton { background: rgba(0, 0, 0, 0); }
 div.da-listItem div.da-circleIconButton:hover { background: var(--on-hover-transparency); }
 
-/* making the red dot more normal */
+/* making the red dot more normal */ 
 div.da-toolbar span.da-iconBadge {
     top: 14px;
     right: 2px;
@@ -1306,10 +1306,10 @@ div.da-popout > div.da-container.da-elevationBorderHigh div.da-queryContainer.da
 
 
 /* general context menus */
-.da-menu, div.da-layerContainer div.contextMenu-HLZMGh {
-    background-color: var(--context-menu-colour) !important;
-    box-shadow: none !important;
-    padding: 0;
+.da-menu, div.da-layerContainer div.contextMenu-HLZMGh { 
+    background-color: var(--context-menu-colour) !important; 
+    box-shadow: none !important; 
+    padding: 0; 
 }
 .da-menu .da-focused { background-color: var(--menu-item-hover); }
 div.da-layerContainer div.da-selected, div.da-itemSlider:active,
@@ -1328,7 +1328,7 @@ div.da-layerContainer div.contextMenu-HLZMGh div.da-clickable:hover,
 /* hiding normal menu scroll, since u dont need it */
 .da-menu .da-scroller {
     overflow-y:hidden !important;
-    padding: 0;
+    padding: 0; 
 }
 
 /* editing context menu emotes */
@@ -1528,10 +1528,10 @@ form.da-modal div.da-footer {
 form.da-modal div.da-footer button[type="button"]:hover{
     background: none;
     text-decoration: underline;
-} form.da-modal div.da-footer button[type="button"] {
-    background: none;
-    flex: none;
-    padding: 0;
+} form.da-modal div.da-footer button[type="button"] { 
+    background: none; 
+    flex: none; 
+    padding: 0; 
     margin-right: 96px;
 }
 
@@ -1543,7 +1543,7 @@ form.da-modal div.da-footer button[type="submit"] {
     border-radius: 5px;
     flex: none;
     position: fixed;
-    padding: 0;
+    padding: 0; 
     margin: 0;
 }
 
@@ -1651,13 +1651,13 @@ div.da-userPopout div.da-footer div.da-protip {
 
 /* context menu on hover */
 .theme-dark .item-1GzJrl:hover,
-.contextMenu-HLZMGh .item-1Yvehc:hover {
-    background-color: var(--menu-item-hover);
+.contextMenu-HLZMGh .item-1Yvehc:hover { 
+    background-color: var(--menu-item-hover); 
 }
 
 /* changing the leave hover colour */
 .item-1GzJrl:hover,
-.item-1Yvehc:last-child:hover,
+.item-1Yvehc:last-child:hover, 
 .theme-dark .item-1GzJrl:last-child:hover {
     color: var(--leave-server-text-colour) !important;
 }
@@ -1792,8 +1792,8 @@ div.categories-1feg4n.da-categories {
 .emojiPicker-3m1S-j.da-emojiPicker { height: var(--emote-menu-height); }
 .emojiPicker-3m1S-j.da-emojiPicker .scrollerFade-1Ijw5y.da-scrollerFade.scrollerTrack-1ZIpsv.da-scrollerTrack > div { height: 100%; }
 div.da-emojiPicker div.da-scroller { background-color: var(--emote-menu) !important; }
-div.da-emojiPicker {
-    height: var(--emote-menu-height);
+div.da-emojiPicker {  
+    height: var(--emote-menu-height); 
     border-radius: 10px;
 } main.da-chatContent form.da-form div.da-drawerSizingWrapper div.da-emojiPicker { grid-template-rows: 46px auto var(--emote-footer-height); }
 main.da-chatContent form.da-form div.da-drawerSizingWrapper {
@@ -1812,9 +1812,9 @@ main.da-chatContent form.da-form div.da-drawerSizingWrapper nav.da-nav {
 
 /* content wrap edits, the padding is for the nav menu */
 main.da-chatContent form.da-form div.da-drawerSizingWrapper div.da-contentWrapper {
-    background-color: var(--emote-header);
+    background-color: var(--emote-header);    
     padding-top: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 0px;   
 }
 
 
@@ -1932,10 +1932,10 @@ div.da-modal > div.da-header { border-radius: 10px 10px 0 0; }
 div.da-modal > div.da-footer {
 	border-radius: 0 0 10px 10px;
 	background-color: var(--light-menu-colour);
-}
+} 
 
 /* correcting carousel fade height */
-div.carouselRightGradientEdge-2Z3H8D.carouselGradientEdge-2W94ou.da-carouselRightGradientEdge.da-carouselGradientEdge,
+div.carouselRightGradientEdge-2Z3H8D.carouselGradientEdge-2W94ou.da-carouselRightGradientEdge.da-carouselGradientEdge, 
 div.carouselLeftGradientEdge-3P4spl.carouselGradientEdge-2W94ou.da-carouselLeftGradientEdge.da-carouselGradientEdge {
     height: 94%;
 }
@@ -1959,9 +1959,9 @@ div.contextMenu-HLZMGh div.da-wrapper > [aria-label^="Add Reaction:"] > img.da-i
 
 /* correcting the "more" menu */
 #message-actions div.da-focused { background: var(--menu-item-hover); }
-#message-actions div.da-scroller {
+#message-actions div.da-scroller { 
     overflow-y:hidden !important;
-    padding: 0;
+    padding: 0; 
 }
 
 
@@ -1988,15 +1988,15 @@ div.contextMenu-HLZMGh div.da-wrapper > [aria-label^="Add Reaction:"] > img.da-i
 
  /* pins design */
 /* working on outliers */
-.da-messagesPopoutWrap .da-messageGroupWrapper:only-child {
+.da-messagesPopoutWrap .da-messageGroupWrapper:only-child { 
     background-color: var(--dark-menu-colour) !important;
-    border: none;
+    border: none; 
 }.da-messagesPopoutWrap .da-messageGroupWrapper:last-child {
-    border-radius: var(--theme-border-radius) var(--theme-border-radius) 0 0;
+    border-radius: var(--theme-border-radius) var(--theme-border-radius) 0 0; 
     border-bottom: none;
     padding-bottom: 10px;
-    margin-bottom: 0;
-}
+    margin-bottom: 0; 
+} 
 
 /* pins header colour for some reason*/
 .da-messagesPopoutWrap .da-wrapper.da-base { color: var(--accent-colour); }
@@ -2016,9 +2016,9 @@ div.contextMenu-HLZMGh div.da-wrapper > [aria-label^="Add Reaction:"] > img.da-i
 
 
 /* mentions design*/
-.da-recentMentionsPopout .da-channelHeader {
+.da-recentMentionsPopout .da-channelHeader { 
     height: fit-content;
-    position: inherit;
+    position: inherit; 
     padding: 6px 0 0 15px;
 }.da-recentMentionsPopout { right: calc(var(--pins-right) + 8px); }
 .da-recentMentionsPopout .da-tab.da-selected  {
@@ -2026,7 +2026,7 @@ div.contextMenu-HLZMGh div.da-wrapper > [aria-label^="Add Reaction:"] > img.da-i
     height: 100%;
     padding: 0;
     margin: 0;
-
+    
 }
 
 /* correcting that dumb ass server info design */
@@ -2076,10 +2076,10 @@ button > div,
 .da-itemBase,
 span.da-username,
 .da-menu .da-label,
-div.ace_gutter-cell,
+div.ace_gutter-cell, 
 div.roleName-32vpEy,
-div.da-markup > span,
-div.da-markup > span,
+div.da-markup > span, 
+div.da-markup > span, 
 div.da-wumpusTooltip,
 div[role="button"] span,
 div.markup-2BOw-j.da-markup,
@@ -2107,7 +2107,7 @@ div.da-content div.da-membersWrap div.da-membersGroup,
 div.da-channels.da-directionColumn div.da-gameWrapper > div,
 div.da-container div.da-panel.da-activityPanel div.da-title,
 div.da-container div.da-scroller.da-firefoxFixScrollFlex div.da-name,
-div.da-userPopout > div.da-footer div.da-wumpus.da-wumpusShown > span
+div.da-userPopout > div.da-footer div.da-wumpus.da-wumpusShown > span 
 div.da-autocompleteInner div.da-selector.da-selectable div div {
   -webkit-font-smoothing: antialiased !important;
   -moz-font-smoothing: antialiased !important;
@@ -2149,7 +2149,7 @@ div.da-app > div.da-spacer > div.da-baseLayer > div.da-container {
 
 
 
-/*
+/* 
     Transparaency + Background
 */
 div.da-app > div.da-app {
@@ -2189,13 +2189,13 @@ div.da-app > div.da-spacer > div.da-baseLayer > div.da-container {
     recent messages notification colours
 */
 
-/* new messages bar colour */
+/* new messages bar colour */ 
 .da-chat div.da-newMessagesBar {
     background-color: var(--new-messages-bar);
 	border-radius: 0 0 var(--bar-radius) 0;
 	z-index: 3;
 	left: 0;
-}
+} 
 
 /* new message on hover */
 .da-chat div.da-newMessagesBar:hover {
@@ -2331,7 +2331,7 @@ div.da-dividerRed.da-divider > span.da-dividerContent:before {
 
 
 
-/*
+/* 
     Settings design
 */
 
@@ -2367,7 +2367,7 @@ div.da-scroller.da-firefoxFixScrollFlex.da-systemPad.da-contentRegionScroller {
 	border-radius: 0 16px 16px 0;
 }
 
-/* setting title text  - delete the display: none; if u want the text back*/
+/* setting title text  - delete the display: none; if u want the text back*/ 
 .socialLinks-3jqNFy,
 .theme-dark .header-2RyJ0Y,
 .side-8zPYf6 .header-2RyJ0Y,
@@ -2394,10 +2394,10 @@ div.da-scroller.da-firefoxFixScrollFlex.da-systemPad.da-contentRegionScroller {
 #app-mount .lookFilled-1Gx00P.colorBrand-3pXr91,
 #app-mount .lookFilled-1Gx00P.colorGrey-2DXtkV:hover,
 #app-mount #bd-settings-sidebar .ui-tab-bar-item:hover,
-#app-mount .side-8zPYf6 .themed-OHr7kt.item-PXvHYJ:hover,
+#app-mount .side-8zPYf6 .themed-OHr7kt.item-PXvHYJ:hover, 
 #app-mount #bd-settings-sidebar .ui-tab-bar-item.selected,
 #app-mount .topPill-30KHOu .themed-OHr7kt.item-PXvHYJ:hover,
-#app-mount .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ,
+#app-mount .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, 
 #app-mount .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
   background-color: var(--on-hover-transparency);
   color: var(--accent-colour);
@@ -2469,7 +2469,7 @@ div.ace_gutter div.ace_gutter-cell {
 	width: 41%;
 	z-index: 1000 !important;
     transition: 400ms !important;
-}
+} 
 
 /* colour of the line numbers */
 .ace-monokai .ace_gutter {
@@ -2510,7 +2510,7 @@ div.ace_gutter div.ace_gutter-cell {
 /* Changelog */
 #bd-settingspane-container .bda-slist::before {
     /* content:"What's new in Aurora 2.x\A -Collapsed Search bar \A -Many new addons \A-Light Theme Blocker \A-New Unread/Selected Indicators \A-Redesigned User Profile Modal\A-New Titlebar \A-Remove Compatibility Tags \A-Changed Server Dropdown \A-New Context Menu Animations \A-Redesigned Account Details Container \A-Members List Tweaks \A-Rework Variable System for var(--main-color); \A-Color Discords Grey SVG's\A-New Group DM Icon \A-Category Animations \A-Redesign Reactions \A-Tall Emoji Picker \A-New Loading Screen Container \A Support server:https://bit.ly/derealised."; */
-
+  
     content: var(--changelog-content);
     display: block;
     line-height:10px;
@@ -2526,14 +2526,14 @@ div.ace_gutter div.ace_gutter-cell {
 
 /* making my theme sorce and website links a lil more accurate */
 /* theme page */
-a[href = "https://github.com/thegeorgeadamson/sakura-theme"]{ font-size: 0%; }
-a[href = "https://github.com/thegeorgeadamson/sakura-theme"]::before {
+a[href = "https://github.com/RubikPaladin/sakura-theme"]{ font-size: 0%; }
+a[href = "https://github.com/RubikPaladin/sakura-theme"]::before {
     content: "Theme Home Page";
     font-size: 12px;
     font-weight: 700;
 }
 /* css source */
-a[href = "https://thegeorgeadamson.github.io/sakura-theme/server-base/main-base.css"]::before {
+a[href = "https://rubikpaladin.github.io/sakura-theme/server-base/main-base.css"]::before {
     content: "CSS ";
 }
 
@@ -2546,8 +2546,8 @@ a[href = "https://thegeorgeadamson.github.io/sakura-theme/server-base/main-base.
 
 
 
-/*
-    still dont know about member, chat & DM select
+/* 
+    still dont know about member, chat & DM select 
 */
 
 /* Channel Aestethic */
@@ -2634,7 +2634,7 @@ div.content-3at_AU div.da-children svg {
 #channels .content-1x5b-n:hover path,
 #channels .da-unread + .da-content path {
     display: var(--VC-icons);
-    color: var(--VC-icon-colour);
+    color: var(--VC-icon-colour);   
 }
 
 /*colour chat octothropes*
@@ -2647,19 +2647,19 @@ div.da-sidebar div.da-selected svg path,
 div.da-sidebar div.content-3at_AU:hover svg path,
 div.da-sidebar div.da-unread + div.content-3at_AU svg > path {
     display: var(--VC-icons);
-    color: var(--VC-icon-colour);
+    color: var(--VC-icon-colour);   
 }
 /* Mod/Admin Icons */
 /* editing the mod/admin icon locations + dealing with ping logic */
 div.content-3at_AU div.da-children div.da-mentionsBadge { right: 5px; }
 div.content-3at_AU:hover div.da-children div.da-mentionsBadge { display: none; }
 div.content-3at_AU div.da-children [role = "button"] { bottom: 8px; display: none; }
-div.content-3at_AU div.da-children > div:nth-child(2)[role = "button"] {
+div.content-3at_AU div.da-children > div:nth-child(2)[role = "button"] { 
     bottom: 17px;
     position: absolute !important;
-} div.content-3at_AU div.da-children [aria-label ~= "Invite"] {
-    top: 8px;
-    display: none;
+} div.content-3at_AU div.da-children [aria-label ~= "Invite"] { 
+    top: 8px; 
+    display: none; 
 }
 
 /* onHover corrections */
@@ -2756,7 +2756,7 @@ div.da-streamPreviewWrapper div.da-streamPreview > div.da-previewContainer {  ba
 div.da-streamPreviewWrapper div.da-streamPreview div.da-body div.da-actionsStreamPreview {  margin-top: 20px; }
 div.da-streamPreviewWrapper div.da-streamPreview {
 	background-color: none;
-	border-radius: 10px
+	border-radius: 10px	
 } div.da-streamPreviewWrapper div.da-streamPreview div.da-body {
 	padding-bottom: 10px;
 	padding-top: 10px;
@@ -2799,7 +2799,7 @@ div.markup-2BOw-j.da-markup.isCompact-1hsne1.da-isCompact > h2.headerCompact-3wR
 
 /* lining up header with text */
 div.markup-2BOw-j.da-markup.isCompact-1hsne1.da-isCompact > h2.headerCompact-3wRt2W.da-headerCompact {
-   margin-left: -7px;
+   margin-left: -7px;  
    margin-right: 10px;
 }
 
@@ -2843,8 +2843,8 @@ div.da-roundButton.da-pageButton.da-activeButton { background: var(--light-menu-
 
 
 
-/*
-    table of friends & DM's
+/* 
+    table of friends & DM's   
 */
 
 /* DM design  */
@@ -2943,7 +2943,7 @@ div.da-friendsRow div.da-friendsColumnActions > div.da-friendsAction {
 div.da-friendsTable div.da-friendsRow {
     border: none !important;
     border-radius: 0 12px 12px 0 !important;
-
+    
 }
 
 /* friend on hover */
@@ -2978,8 +2978,8 @@ div.da-searchBar button.da-searchBarComponent {
 
 
 
-/*
-    Animated Status Picker
+/* 
+    Animated Status Picker 
 */
 
 /* without this u cant set picked pos to fixed */
@@ -3095,7 +3095,7 @@ div.noArrow-2foL9g.da-noArrow.popout-2iWAc-.da-popout.popoutTopLeft-3B0mFf.arrow
     background-position: var(--icon-x-axis) var(--icon-y-axis) !important;
 	opacity: 1;
 	visibility: visible;
-	transition: 20ms var(--default-animation);
+	transition: 20ms var(--default-animation); 
 }
 
 /* removing old menu information */
@@ -3121,7 +3121,7 @@ div.noArrow-2foL9g.da-noArrow.popout-2iWAc-.da-popout.popoutTopLeft-3B0mFf.arrow
 
 
 
-/*
+/* 
     Plugins
 */
 
@@ -3146,8 +3146,8 @@ div.noArrow-2foL9g.da-noArrow.popout-2iWAc-.da-popout.popoutTopLeft-3B0mFf.arrow
 .NoDeleteMessages-deleted-message .da-markup{ color: var(--deleted-text) !important; }
 .NoDeleteMessages-deleted-message .NoDeleteMessages-edited-message > .NoDeleteMessages-edited-message:last-child > .NoDeleteMessages-edited-message { color: var(--deleted-text) !important; }
 
-/*  sets shade of eddited text to be darker
-    to make large sections more intuitive to read
+/*  sets shade of eddited text to be darker 
+    to make large sections more intuitive to read 
     + extends colour changes */
 :not(.ml-edited) > .ml-edited,
 div.ml-edited:not(:last-child) > div {
@@ -3157,7 +3157,7 @@ div.ml-edited:not(:last-child) > div {
 /* changing size slightly */
 :not(.ml-edited) > .ml-edited { font-size: 95%; }
 div.ml-edited:not(:last-child) > div { font-size: 100%; }
-
+    
 /* correcting eddited emotes */
 :not(.ml-edited) > .ml-edited .emoji,
 div.ml-edited:not(:last-child) .emoji {
@@ -3208,7 +3208,7 @@ div.ml-deleted div.ml-edited:not(:last-child) > div {
     margin-top: 10px;
     border-radius: 0 0 var(--theme-border-radius) var(--theme-border-radius);
     height: 20px;
-
+    
 }
 
 /* normal element design */
@@ -3246,9 +3246,9 @@ div.BE-badge.BE-badge-chat:not(.BE-badge-CurrentGuildBoost) { top: 4px; }
 /* correcting first and last */
 /*.BE-badge:not(.BE-badge-settings):first-of-type { margin-left: 0 !important; }*/
 .BE-badge:not(.BE-badge-settings):last-of-type { margin-right: 0px !important; }
-.BE-badge:not(.BE-badge-settings){
-    z-index: 1;
-    margin-top: -2px !important;
+.BE-badge:not(.BE-badge-settings){ 
+    z-index: 1; 
+    margin-top: -2px !important; 
     background-position: 50% 50% !important;
     background-size: 90%;
 } div.BE-badge.BE-badge-CurrentGuildBoost.BE-badge-chat svg {
@@ -3262,13 +3262,13 @@ div.BE-badge.BE-badge-chat:not(.BE-badge-CurrentGuildBoost) { top: 4px; }
 /* image details plug */
 .details-1t6Zms { margin:0; }
 .da-cozyMessage:hover .details-1t6Zms > .da-flexChild  { opacity: .6; }
-.details-1t6Zms > .da-flexChild {
-    font-size: 11px !important;
+.details-1t6Zms > .da-flexChild { 
+    font-size: 11px !important; 
     opacity: 0;
 }
 
 /* image details plug *
-.image-details,
+.image-details, 
 .image-details .image-details-size,
 .image-details .image-details-dimensions { font-size: 11px !important; }
 .image-details .image-details-dimensions { margin-left: 5px; }
