@@ -1,0 +1,147 @@
+@import url(https://rubikpaladin.github.io/sakura-theme/server-base/main-base.css);
+:root {
+
+    /*
+        Vertical Server Specific Variables
+    */
+
+
+	/* default: 55 */
+	/* DONT CHANGE THIS, in vertical mode, it does NOT change emote size, it is still used as a size reference in other variables thoe */
+	--HSL-size: 50px;
+
+    /* sets the sidebar width - should 'automagically' scale most things for u */
+    --side-bar-width: 248px;
+
+    /* folder spacing from edge */
+    --folder-left: calc(var(--HSL-size) + 21px);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+    Vertical Bas Specific Code Blocks
+*/
+
+
+/* full correction of borders */
+div.da-container div.da-sidebar header.da-header { border-bottom: var(--borders); }
+div.da-container div.da-sidebar > nav { border-radius: var(--sidebar-radius) var(--sidebar-radius) 0 0 !important; }
+div.da-bannerImage { border-radius: var(--sidebar-radius) var(--sidebar-radius) 0 0; }
+div.da-container div.da-sidebar > nav,
+div.da-container div.da-sidebar > section {
+    border-top: var(--borders);
+    border-left: var(--borders);
+    border-right: var(--borders);
+} div.da-chat div.da-membersWrap {
+    border-top: var(--borders);
+    border-left: var(--borders);
+    border-radius: var(--sidebar-radius) 0 0 0 !important;
+}
+
+/* he forgot the some border lines, so here they are (if u want to change their colour edit --border-lines-color as well)*/
+div.da-base > div.da-content > div.da-sidebar > div {
+    border-right: var(--borders);
+    border-left:  var(--borders);
+}
+
+/* title bar (also includes the windows minus, full screen & exit) */
+.typeWindows-1za-n7 { background: var(--main-transparency); }
+
+/* setting folder backgrounds */
+div.da-wrapper > span.da-expandedFolderBackground {
+    background-color: var(--opened-folder-colour);
+    border-radius: 15px 15px 24px 24px;
+}
+
+
+/* making server add + search normal again */
+div.da-listItem {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* changing time display */
+h2.da-header:hover span.da-timestamp,
+img:hover + h2.da-header span.da-timestamp { display: inline-block; }
+span.da-timestamp {
+    height: 1rem;
+    display: var(--time-display);
+}
+
+/* bot tag dimensions and stuff */
+span.da-botTag {
+    background: var(--bot-tag-colour);
+    color: var(--bot-text);
+    margin-left: 2px;
+    height: 10px;
+    top: -1px;
+}
+
+/* notification bar */
+.noticeDefault-362Ko2,
+.notice-3I4-y_,
+.noticeInfo-3_iTE1 {
+	background: var(--notification-bar) !important;
+}
+
+
+/* server music icon */
+/* icon reposition */
+.upperBadge-2XnnGB{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: -2px;
+	left: 26px;
+}
+
+
+/* Offline Message Customization *
+div.da-app div.da-container.da-fixClipping > div.da-problems > div.da-problemsText {
+    font-size: 0;
+    margin-bottom: 5px;
+} div.da-app div.da-container.da-fixClipping {
+    display: inline-table;
+    z-index: 999999;
+    width: 100%;
+    left: -90px;
+    height: 7px;
+    top: -27px;
+    position: inherit;
+}
+
+/* updating offline message */
+.da-fixClipping {
+    left: calc(var(--side-bar-width) + var(--HSL-size) + 20px);
+}
+
+/* fixing friend/home icon location */
+nav.da-wrapper div.tutorialContainer-1v44GL div.da-listItem {
+    width: auto;
+    padding-right: 8px;
+}
+
+
+/* Animated Status Picker */
+/* shape and size of the box *
+#popout_3 div.da-menu {
+    position: fixed;
+	left: -8px;
+	bottom: -3px;
+	width: var(--picker-width) !important;
+	top: initial !important;
+	margin-bottom: var(--margin-bottom);
+	z-index: 99 !important;
+    border-radius: 0 !important;
+    padding: 0;
+    cursor: initial;
+}

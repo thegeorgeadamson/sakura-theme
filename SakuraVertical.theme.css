@@ -1,0 +1,58 @@
+/*//META{"name":"Rυbιι's Saƙυɾa Theɱe (Veɾtιcaʅ)","description":"Saƙυɾa by Rυbιι (Vertical Version) a highly customizable aggregate of themes + a lot of my σωη persσηal tσυches. NotAnotherAnimeThemeSCSL is the major theme, utilized for its transparency.","author":"RubikPaladin#0003","version":"12.1.03", "website":"https://github.com/RubikPaladin/sakura-theme", "source":"https://rubikpaladin.github.io/sakura-theme/server-base/main-base.css"}*//**/
+
+@import url(https://rubikpaladin.github.io/sakura-theme/server-base/vertical-server-base.css);
+:root {
+
+        /*  I keep the text a lil smoll so if u want to make it bigger the var is below
+
+            NOTE:  to set a variable, it needs to be in :root { --font-size: 14px; }   and be written like   --font-size: 14px;
+            the variables below only have 1 hyphen  e.g  -font-size  for safety reasons, just add the second hyphen and ull be sweet
+        */
+
+
+        /* Edit this to change your background  - default: url(https://i.imgur.com/hLulxgq.png); */
+        -background-image: ;
+
+        /*  for customization u can change the friend icon colour with --friends-icon-hue-rotation: ; --friends-icon-brightness: ;
+            but this means a custom image, will be like purple or some rando colour, to make it normal just turn colours off with these
+            --friends-icon-hue-rotation: none; --friends-icon-brightness: none;
+        home button pic - a square is better     - default: url(https://i.imgur.com/ky3iygN.png); */
+        -friends-icon: ;
+
+        /* server icon size - default: 50 */
+        -HSL-size: ;
+
+        /* Change global transparency -  default: rgba(0, 0, 0, .5); */
+        -main-transparency: ;
+
+        /* Change chat messages font size, you can use any unit: px, em, rem, %, etc.   - default: 16px; */
+        -font-size: ;
+
+
+
+        -side-bar-width: ;
+
+        /* colour for member/server  "Categories"
+            my Home Button (messages/friend icon) is set to a similar colour as the title colour
+            if u change the title colour, i would follow the "--friends-icon" link, change the colour of it
+            to ur title colour, upload it to imgur and add it here for continuity  - default: rgba(132, 96, 75, 1); */
+        -title-color: ;
+
+            /*  note: alot of colour variables are tied to "--accent-colour" but u may uncouple them *
+                mostly used on text (i.e all the smol white icons and text turn a light pink)   - default: rgba(236, 212, 225, 1); */
+        -accent-colour: ;
+
+        /* the rainbow notification bar requires a color start point */
+        /* this is a dim purple one but u can make it brighter and more colourful -   default: rgba(255,120,255, .4);  or var(--main-color); or var(--title-color); */
+        -rainbow-seed: ;
+
+
+
+        /*
+            The full theme has some 200+ variables, if u want to customize the theme more specifically
+            just copy the `import` link into your browser, or click "CSS Source" in the themes menu
+            take a look around, pull variables u like over here or into the custom CSS
+            and modify them as u please
+            Last Update - 199th commit
+        */
+}
