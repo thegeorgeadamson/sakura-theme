@@ -118,7 +118,6 @@ div.da-app div.da-container.da-fixClipping > div.da-problems > div.da-problemsTe
     top: -27px;
     position: inherit;
 }
-
 /* updating offline message */
 .da-fixClipping {
     left: calc(var(--side-bar-width) + var(--HSL-size) + 20px);
