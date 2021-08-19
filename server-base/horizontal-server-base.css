@@ -63,11 +63,6 @@ div.da-base > div.da-content > div.da-sidebar > div {
 /* idk what this does */
 .wrapper-1Rf91z .da-scrollerWrap { left: 10px !important;}
 
-/* makes home button proper width */
-nav.da-wrapper.guilds-1SWlCJ div.tutorialContainer-1v44GL {
-    width: fit-content;
-}
-
 /* setting folder backgrounds */
 div.da-wrapper > span.da-expandedFolderBackground {
     background-color: var(--opened-folder-colour);
