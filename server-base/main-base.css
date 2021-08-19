@@ -25,10 +25,10 @@
 	*/
 	
     /* Edit this to change your background */
-    --background-image: url(https://i.imgur.com/hLulxgq.png);
+    --background-image: url(https://www.colorhexa.com/120b10.png);
 	
     /* home button pic - a square is better*/
-    --friends-icon: url(https://i.imgur.com/ky3iygN.png);
+    --friends-icon: url(https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png);
     
 	/* Change global transparency */
     --main-transparency: rgba(0, 0, 0, .5);		/* default: rgba(0, 0, 0, 0.8); */
